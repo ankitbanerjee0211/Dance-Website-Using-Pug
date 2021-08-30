@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title Ankit's Dance Academy
+        block scripts
+        block style
+    body
+        nav#navbar 
+            ul
+                div#logo
+                    img(src="static/img/logo.png", alt="logo")
+                    | ADA
+                li #[a(href= '/') HOME] 
+                li #[a(href= '/') ABOUT] 
+                li #[a(href= '/') SERVICES] 
+                li #[a(href= '/') CLASS INFO] 
+                li #[a(href= '/contact') CONTACT US]
+                //- the href here is not location it is the location as the endpoint descrived in the app.js
+        block content
+        footer#footer 
+            | Copyright © 2021 AnkitsDanceAcademy.com | All rights reserved

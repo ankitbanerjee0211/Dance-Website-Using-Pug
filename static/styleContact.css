@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.contactContainer{
+    min-height: 77vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 18px 0;
+}
+
+
+.contactContainer h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 34px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 10px auto; */
+}
+
+.myInput{
+    width: 50%;
+    padding: 10px;
+    margin: 7px;
+    font-size: 17px;
+    border: 1.5px solid black;
+    border-radius: 1px;
+    outline: none;
+}
+
+.btn{
+    padding: 6px 12px;
+    font-size: 18px;
+    /* border: 4px solid black; */
+    border-radius: 10px;
+    color: white;
+    background: green;
+    cursor: pointer;
+    width: 50%;
+    outline: none;
+    margin-top: 13px;
+}
