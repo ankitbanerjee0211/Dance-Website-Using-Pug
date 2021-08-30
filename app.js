@@ -5,7 +5,16 @@ const app = express();
 // making a database named 'contactDance'
 // and connecting and importing mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
+
+// For Local db
+// mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
+// For Mongo Atlas
+const connection = "mongodb+srv://ankit:Ankitb@n12345@dance-website-using-pug.hfja9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+
+// mongodb+srv://ankit:Ankitb@n12345@dance-website-using-pug.hfja9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+sample_mflix
 const port = process.env.PORT || 8000;
 // Requiring body-parser
 const bodyparser = require('body-parser');
