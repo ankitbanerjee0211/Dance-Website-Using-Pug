@@ -6,7 +6,7 @@ const app = express();
 // and connecting and importing mongoose
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
-const port = 8000;
+const port = process.env.PORT || 8000;
 // Requiring body-parser
 const bodyparser = require('body-parser');
 
